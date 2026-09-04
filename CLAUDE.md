@@ -14,7 +14,7 @@ All pages share the same brand tokens (cream/amber/Cinzel/Cormorant/Jost) and si
 
 ## Design Context
 
-Two root files are the source of truth for design and strategy; read both before any visual, copy, or UX decision:
+Two root files are the source of truth for design and strategy; read both before any visual, copy, or UX decision. They are local-only (gitignored) because the repo is public; never commit them or copy their contents into committed files:
 
 - `PRODUCT.md` (strategic) — register (**brand**), users, the qualified-inquiry north star, brand personality ("quiet authority"), anti-references, 5 design principles, WCAG 2.1 AA target.
 - `DESIGN.md` (visual) — colors, typography, spacing, motion, signature elements, off-web surfaces.
@@ -27,7 +27,7 @@ When in doubt, the venue gets quieter.
 
 ## Source Control and Deploy
 
-The repo is `andrewdgeorge/the-george-site` on GitHub (private). `main` is production.
+The repo is `andrewdgeorge/the-george-site` on GitHub. It is PUBLIC (Netlify's free plan blocks git builds from private repos), so nothing confidential goes in it. `main` is production.
 
 Workflow for every change:
 
@@ -46,4 +46,4 @@ Netlify's publish directory is `.` (the repo root), so everything committed is p
 
 ## Reference
 
-See `The_George_Project_Reference_v2.md` for full business context (capacity, pricing, brand strategy, operational details).
+See `The_George_Project_Reference_v2.md` and `BAR-PRICING-CONTEXT.md` for full business context (capacity, pricing, brand strategy, operational details). Both are local-only and gitignored. Do not quote pricing or strategy from them in committed files or PR text.

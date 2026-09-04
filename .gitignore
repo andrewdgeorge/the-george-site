@@ -40,3 +40,10 @@ design-system/dist/
 .design-sync/
 .claude/settings.local.json
 node_modules/
+
+# Internal docs: stay in this folder for Claude Code, never in git or on the live site
+The_George_Project_Reference_v2.md
+BAR-PRICING-CONTEXT.md
+BAR-PRICING-CONTEXT.txt
+PRODUCT.md
+DESIGN.md
