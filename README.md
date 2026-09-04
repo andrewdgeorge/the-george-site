@@ -4,7 +4,8 @@ Static marketing site for The George in Birmingham, Alabama.
 
 ## Structure
 
-- `index.html` - Homepage with inline styles and scripts.
+- `index.html` - Live homepage (currently the Coming Soon page), inline styles and scripts.
+- `home.html` - Full long-form homepage, unlisted preview (`noindex`, not in sitemap).
 - `landing.css` - Shared styles for event landing pages.
 - `calc.js` - Shared landing-page pricing calculator.
 - `avail.js` - Shared landing-page availability calendar.
@@ -32,6 +33,8 @@ Netlify Functions are only fully available in Netlify or via the Netlify CLI.
 - `THANK_YOU_REPLY_TO` - optional, defaults to `andrew@thegeorgebhm.com`.
 
 ## Deploy
+
+Source of truth is the GitHub repo `andrewdgeorge/the-george-site`. `main` deploys to production; pull requests get a Netlify Deploy Preview. Do not deploy from the CLI.
 
 The site is configured for Netlify:
 

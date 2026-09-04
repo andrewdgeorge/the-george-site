@@ -4,12 +4,13 @@ The George is a premium private event venue at 1827 1st Avenue North, Suite 103,
 
 ## Pages
 
-- `index.html` — homepage (long-form)
+- `index.html` — the LIVE homepage. Currently the "Coming Soon" page.
+- `home.html` — the full long-form homepage. Not linked from navigation and carries a `noindex` tag; it is an off-menu preview shared by link only. Do not swap it into `index.html` without explicit approval.
 - `weddings.html`, `galas.html`, `corporate-events.html`, `nonprofit-events.html`, `private-parties.html`, `rehearsal-dinner.html` — event-type landing pages
 - `sitemap.xml`, `robots.txt` — SEO
 - `netlify.toml` — deploy config
 
-All pages share the same brand tokens (cream/amber/Cinzel/Cormorant/Jost) and signature elements (gold-rule, italic decorative numerals, brand stamp). Landing pages link `landing.css`; `index.html` has embedded styles.
+All pages share the same brand tokens (cream/amber/Cinzel/Cormorant/Jost) and signature elements (gold-rule, italic decorative numerals, brand stamp). Landing pages link `landing.css`; `index.html` and `home.html` have embedded styles.
 
 ## Design Context
 
@@ -24,9 +25,24 @@ Always read `DESIGN.md` before making any visual or UI decision. All font choice
 
 When in doubt, the venue gets quieter.
 
-## Deploy
+## Source Control and Deploy
 
-Netlify CLI is linked. Production deploy: `netlify deploy --prod --dir=.` (always confirm with the user before running). After every upload, check for and strip any Cloudflare-injected email obfuscation `<script>` tag that breaks the mobile burger menu.
+The repo is `andrewdgeorge/the-george-site` on GitHub (private). `main` is production.
+
+Workflow for every change:
+
+1. Branch off `main`. Never commit directly to `main`.
+2. Make the change, commit atomically, push, open a pull request.
+3. Netlify builds a Deploy Preview for the PR. QA the preview URL (`/browse`), not production.
+4. The user reviews the preview and approves. Merge to `main` deploys to production.
+
+Do NOT run `netlify deploy --prod`. Production deploys come from merging to `main` only. If Netlify is not yet connected to the GitHub repo, stop and ask the user before deploying by any other means.
+
+Rollback: revert the merge commit on `main`, or use "Publish deploy" on a previous deploy in the Netlify dashboard.
+
+After any deploy, check for and strip any Cloudflare-injected email obfuscation `<script>` tag that breaks the mobile burger menu.
+
+Netlify's publish directory is `.` (the repo root), so everything committed is publicly served. Keep working files, notes, and tool folders out of the repo or in `.gitignore`.
 
 ## Reference
 
