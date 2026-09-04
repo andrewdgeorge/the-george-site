@@ -1,0 +1,66 @@
+/* ─────────────────────────────────────────────────
+   THE GEORGE — DESIGN TOKENS
+   Source of truth: DESIGN.md. One accent forever, three
+   typefaces, three letter-spacing values, almost no radius.
+───────────────────────────────────────────────── */
+:root {
+  /* Cream stack — backgrounds */
+  --bg:      #F7F3EC; /* primary cream — default page background */
+  --bg-2:    #EDE8DF; /* alt cream — alternating sections */
+  --bg-3:    #E4DDD1; /* deep cream — pricing, testimonials, callouts */
+
+  /* Ink — dark zones */
+  --dark:    #1C1710; /* footer, marquee, hero overlay */
+  --dark-2:  #251F14; /* dark zone secondary */
+
+  /* Gold — the only accent */
+  --amber:   #9E7A2E;               /* primary gold — rules, accents, links, CTAs */
+  --amber-l: #B8922A;               /* gold light — hover states */
+  --amber-d: rgba(158,122,46,0.10); /* gold tint — callout backgrounds */
+  --amber-b: rgba(158,122,46,0.22); /* gold border — hairlines, dividers */
+
+  /* Text */
+  --ink:     #1C1710; /* body text, headlines */
+  --ink-2:   #3D3529; /* secondary text */
+  --muted:   #7A6E5F; /* tertiary, supporting copy */
+  --muted-l: #A89B88; /* labels, captions, disabled */
+
+  /* Type families — three voices, no fourth */
+  --brand:   'Cinzel', Georgia, serif;            /* wordmark only */
+  --serif:   'Cormorant Garamond', Georgia, serif;/* display, quotes, numerals */
+  --sans:    'Jost', sans-serif;                  /* body, UI, labels */
+
+  /* Type scale — modular 1.25, anchored to 16px */
+  --t-xs:   0.69rem;  /* nav, caption, footer, brand stamp */
+  --t-sm:   0.81rem;  /* small labels, figure captions */
+  --t-base: 1rem;     /* body */
+  --t-lg:   1.25rem;  /* lead paragraph */
+  --t-xl:   1.625rem; /* card headlines */
+  --t-2xl:  2.125rem; /* section H2 */
+  --t-3xl:  2.75rem;  /* page H1 */
+  --t-4xl:  3.625rem; /* hero display */
+
+  /* Letter-spacing — locked to three values on all-caps text */
+  --ls-tight:   0.12em; /* compact UI labels, nav */
+  --ls-eyebrow: 0.2em;  /* section eyebrows, all-caps Jost labels */
+  --ls-hero:    0.32em; /* hero tagline, brand stamp */
+
+  /* Spacing — 4px base */
+  --s-1: 4px;   --s-2: 8px;   --s-3: 12px;  --s-4: 16px;
+  --s-6: 24px;  --s-8: 32px;  --s-12: 48px; --s-16: 64px;
+  --s-24: 96px; --s-32: 128px;
+  --s-48: 192px; /* signature breathing */
+
+  /* Radius — the building is brick */
+  --r-sm: 2px; /* inputs, small affordances */
+  --r-md: 4px; /* cards, buttons */
+  --r-lg: 6px; /* image frames */
+
+  /* Layout */
+  --max-w: 1200px;
+
+  /* Motion */
+  --m-micro: 120ms; /* hover, color transitions */
+  --m-std:   240ms; /* fade in, accordion */
+  --m-slow:  480ms; /* hero entrance only */
+}
