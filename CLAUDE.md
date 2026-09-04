@@ -7,6 +7,7 @@ The George is a premium private event venue at 1827 1st Avenue North, Suite 103,
 - `index.html` — the LIVE homepage. Currently the "Coming Soon" page.
 - `home.html` — the full long-form homepage. Not linked from navigation and carries a `noindex` tag; it is an off-menu preview shared by link only. Do not swap it into `index.html` without explicit approval.
 - `weddings.html`, `galas.html`, `corporate-events.html`, `nonprofit-events.html`, `private-parties.html`, `rehearsal-dinner.html` — event-type landing pages
+- `images/` — every image the site uses, lowercase hyphenated names. Source files and unused renders live outside the repo in `../the-george-source-media/`.
 - `sitemap.xml`, `robots.txt` — SEO
 - `netlify.toml` — deploy config
 

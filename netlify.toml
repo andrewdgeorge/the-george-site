@@ -14,3 +14,37 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Images moved into /images on 2026-09-04; keep old links working
+[[redirects]]
+  from = "/Courtyard.jpeg"
+  to = "/images/courtyard.jpeg"
+  status = 301
+[[redirects]]
+  from = "/andrew-ragan.jpg"
+  to = "/images/andrew-ragan.jpg"
+  status = 301
+[[redirects]]
+  from = "/facade-watercolor.jpeg"
+  to = "/images/facade-watercolor.jpeg"
+  status = 301
+[[redirects]]
+  from = "/facade-watercolor-2.jpeg"
+  to = "/images/facade-watercolor-2.jpeg"
+  status = 301
+[[redirects]]
+  from = "/interiormockup.jpeg"
+  to = "/images/interior-mockup.jpeg"
+  status = 301
+[[redirects]]
+  from = "/logo-crest.png"
+  to = "/images/logo-crest.png"
+  status = 301
+[[redirects]]
+  from = "/Wedding%20Hero.jpeg"
+  to = "/images/wedding-hero.jpeg"
+  status = 301
+[[redirects]]
+  from = "/Sidewalk%20Mockup.jpg"
+  to = "/images/sidewalk-mockup.jpg"
+  status = 301
